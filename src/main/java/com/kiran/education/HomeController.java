@@ -12,7 +12,7 @@ public class HomeController {
     @Autowired
    private HomeService homeService;
     @GetMapping("/")
-    @RequestMapping(method = RequestMethod.GET)
+   // @RequestMapping(method = RequestMethod.GET)
     public String index(Model model){
         Inquiry inquiry = new Inquiry();
         model.addAttribute(inquiry);
