@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.*;
 public class HomeController {
     @Autowired
    private HomeService homeService;
-    @GetMapping("/")
+    @GetMapping("18.118.48.193:8080/home")
    // @RequestMapping(method = RequestMethod.GET)
     public String index(Model model){
         Inquiry inquiry = new Inquiry();
