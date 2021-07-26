@@ -12,11 +12,10 @@ public class HomeController {
     @Autowired
    private HomeService homeService;
     @GetMapping("18.118.48.193:8080/home")
-   // @RequestMapping(method = RequestMethod.GET)
     public String index(Model model){
         Inquiry inquiry = new Inquiry();
         model.addAttribute(inquiry);
-        return "index";
+        return "index.html";
     }
     @GetMapping("/course")
     public String course(Model model){
